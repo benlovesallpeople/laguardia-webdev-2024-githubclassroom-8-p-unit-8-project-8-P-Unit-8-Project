@@ -1,0 +1,26 @@
+@font-face{
+  font-family: water;
+  src: url("https://cdn.glitch.global/97f7bbb3-2cd9-4b34-bbf2-d0a28c71f10b/Water%20Park.ttf?v=1738683075854");
+}
+
+body {
+  background-color: aliceblue;
+  text-align: center;
+  color: navy;
+  margin: auto;
+  font-family: water;
+}
+
+h1{
+  font-size: 30px;
+}
+
+#myCanvas {
+  background-image: url("https://seaviewinfo.com/wp-content/uploads/2018/07/SeaScape.jpg");
+  background-size: 600px 400px;
+  border-radius: 300px;
+  border: 5px solid white;
+}
+
+
+
