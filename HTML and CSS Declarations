@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jazz Music</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+text-align: center;
+}
+h1 {
+color: darkblue;
+}
+h4 {
+margin-top: 20px;
+font-size: 1.2em;
+}
+img {
+width: 200px;
+margin: 10px;
+border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<h1>Jazz Music Is My Favorite Music</h1>
+<p><strong><em>I play many instruments. My main one is the tenor saxophone.</
+em></strong></p>
+<h4>Here are some top tenor players</h4>
+<ol>
+<li>John Coltrane</li>
+<li>Sonny Rollins</li>
+<li>Dexter Gordon</li>
+</ol>
+<h4>Here are their pictures</h4>
+<img src="coltrane.jpg" alt="John Coltrane">
+<img src="rollins.jpg" alt="Sonny Rollins">
+<img src="gordon.jpg" alt="Dexter Gordon">
+</body>
+</html>
