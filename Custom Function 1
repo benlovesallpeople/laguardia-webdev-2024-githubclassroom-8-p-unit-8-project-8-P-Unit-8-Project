@@ -1,0 +1,18 @@
+// Setup Function - Runs Once to Set the Canvas
+function setup() {
+createCanvas(600, 400); // Fixed 'size()' to 'createCanvas()'
+background(43, 101, 236);
+// These functions must be defined separately or removed if not implemented
+// drawShark(108, 119, 128);
+// drawBubble(0, 255, 255);
+// drawSeaweed(11, 123, 139);
+}
+// Draw Function - Runs on Repeat
+function draw() {
+drawOceanScene();
+}
+// Custom Function for Drawing Ocean Scene
+function drawOceanScene() {
+fill(38, 102, 54); // Green color for seaweed or objects
+ellipse(mouseX, mouseY, 40, 40); // Draws a circle following the mouse
+}
