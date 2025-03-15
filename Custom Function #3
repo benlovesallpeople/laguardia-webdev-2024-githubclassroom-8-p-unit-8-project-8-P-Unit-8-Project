@@ -1,0 +1,21 @@
+// setup Function - Runs Once
+function setup() {
+createCanvas(600, 400); // Corrected 'size()' to 'createCanvas()' (p5.js syntax)
+background(255, 83, 73);
+fill(255, 0, 0);
+textSize(25);
+text("My favorite saxophonists are …", 200, 60);
+textSize(20);
+text("Click anywhere to find out!", 200, 100);
+}
+// draw Function - Runs on Repeat (Not Needed in This Case)
+function draw() {
+// No need for repeated checks in draw, handled in mousePressed()
+}
+// Mouse Pressed Function - Runs When Mouse is Clicked
+function mousePressed() {
+fill(random(255), random(255), random(255)); // No need for (0, x), just (x)
+textSize(20);
+text("John Coltrane", random(width), random(height));
+text("Charlie Parker", random(width), random(height));
+}
