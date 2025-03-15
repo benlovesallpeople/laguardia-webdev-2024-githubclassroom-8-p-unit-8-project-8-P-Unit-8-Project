@@ -1,0 +1,22 @@
+function setup() {
+createCanvas(600, 400);
+background(43, 101, 236);
+}
+function draw() {
+background(43, 101, 236); // Refresh background each frame to clear old sharks
+drawShark(mouseX, mouseY); // Shark follows the mouse
+}
+// Function to draw a shark at (x, y)
+function drawShark(x, y) {
+noStroke();
+fill(100, 100, 100); // Gray color
+ellipse(x, y, 100, 50); // Body
+triangle(x - 50, y, x - 80, y - 20, x - 80, y + 20); // Tail
+triangle(x + 10, y - 20, x - 10, y - 50, x - 30, y - 20); // Fin
+fill(255);
+ellipse(x + 30, y - 10, 10, 10); // Eye
+fill(0);
+ellipse(x + 32, y - 10, 5, 5); // Pupil
+fill(200, 0, 0);
+arc(x + 40, y + 10, 20, 10, 0, PI); // Mouth
+}
