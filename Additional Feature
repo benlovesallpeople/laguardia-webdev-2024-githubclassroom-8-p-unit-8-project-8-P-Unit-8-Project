@@ -1,0 +1,25 @@
+function setup() {
+createCanvas(600, 400);
+background(43, 101, 236);
+}
+function draw() {
+// Nothing needed in draw() for this example
+}
+function mousePressed() {
+drawShark(random(width), random(height)); // Creates a shark at a random
+position
+}
+// Function to draw a shark at (x, y)
+function drawShark(x, y) {
+noStroke();
+fill(100, 100, 100);
+ellipse(x, y, 100, 50);
+triangle(x - 50, y, x - 80, y - 20, x - 80, y + 20);
+triangle(x + 10, y - 20, x - 10, y - 50, x - 30, y - 20);
+fill(255);
+ellipse(x + 30, y - 10, 10, 10);
+fill(0);
+ellipse(x + 32, y - 10, 5, 5);
+fill(200, 0, 0);
+arc(x + 40, y + 10, 20, 10, 0, PI);
+}
